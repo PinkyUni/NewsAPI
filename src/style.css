@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "Podkova-Bold"; 
+    src: url('fonts/Podkova-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Podkova-Regular"; 
+    src: url('fonts/Podkova-Regular.ttf');
+}
+
+body {
+	font-family: Podkova-Regular;
+	margin: 0;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.el {
+	padding: 1vw;
+}
+
+.logo {
+	font-size: 3vw;
+	padding-left: 2vw;
+	font-family: Podkova-Bold;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+#btn {
+	width: 0;
+	height: 0;
+	border: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5vw;
+}
+
+.searching {
+	margin-right: 2vw;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+}
+
+#search {
+	display: none;
+	margin-right: 1vw;
+}
+
+#search:focus {
+	display: block;
+}
+
+#btnLabel,
+input {
+	padding: 0.5vw;
+	opacity: 0.85;
+	display: inline-block;
+	font-size: 1.5vw;
+	line-height: 1.4vw;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	font-family: Podkova-Regular;
+}
+
+#btnLabel {
+	height: auto;
+}
+
+.searching:hover #search {
+	display: inline-block;
+	border-bottom: 1px solid #fff95b;
+}
+
+input:hover {
+	opacity: 1;
+}
+
+label:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.scroll {
+	width: 100%;	
+	height: auto;
+	margin-bottom: 1vw;
+	overflow: auto;
+}
+
+nav {
+	width: 100%;
+	height: 8vw;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    height: 4px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px #ff00e5;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #ff87f2; 
+}
+
+button {
+	outline: none;
+	font-family: Podkova-Regular;
+}
+
+.nav-el {
+	height: 70%;
+	box-sizing: border-box;
+	padding: 1vw 2vw;
+	background-color: white;
+	margin: 1vw;
+	border: 1px solid #00c3ff;
+	font-size: 1vw;
+}
+
+.nav-el:hover {
+	margin-bottom: 10px;
+	border-color: #fff95b;
+	box-shadow: 0 2px 2px #fff95b;
+	cursor: pointer;
+}
+
+.nav-el:focus {
+	border-color: #fff95b;
+	box-shadow: 0 2px 2px #fff95b;
+}
+
+.news-resource-name {
+	font-size: 2vw;
+	text-align: center;
+	padding: 1vw;
+}
+
+main {
+	padding: 1vw 20vw;	
+	min-height: 40vw;
+}
+
+.news-article {
+	background-color: #fff95b;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #fff95b;
+	background-color: #fff95b;
+	opacity: 0.8;
+	margin-bottom: 1vw;
+}
+
+.content:hover {
+	opacity: 1;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;	
+}
+
+.img-el {
+    max-height: 20vw;
+    flex: 2;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0;
+}
+
+.info {
+	flex: 3;
+	padding: 1vw;
+	background-color: white;
+}
+
+.title-el {
+	padding-bottom: 1vw;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.title {
+	font-size: 1.6vw;
+	font-family: Podkova-Bold;
+	word-break: break-all;
+}
+
+.description {
+	word-break: break-all;
+	overflow: hidden;
+	line-height: 1.4vw;
+	font-size: 1vw;
+  	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+}
+
+.description p {
+	margin: 0;
+}
+
+.load-more {
+	height: 12vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.rhomb {
+	width: 6vw;
+    height: 6vw;   
+    opacity: 0.6;
+}
+
+.pink {
+	border: 2px solid #ff00e5;
+	transform: rotate(-45deg);
+}
+
+.rhomb:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.rhomb:hover .square {
+	transform: rotate(-45deg);
+	transition: transform .6s ease-in-out;
+}
+
+.rhomb:hover .btn-load {
+	transform: rotate(450deg);
+	transition: transform .4s ease-in-out;
+}
+
+.square {
+	width: 6vw;
+    height: 6vw;
+    border: 2px solid #fff95b;
+    transform: rotate(45deg);
+}
+
+.btn-load {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Podkova-Bold;
+	font-size: 1vw;	
+}
+
+footer {
+	height: 6vw;
+	padding: 2vw 10vw;
+	background-color: #00c3ff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+#not-found {
+	text-align: center;
+}

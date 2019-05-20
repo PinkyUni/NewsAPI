@@ -1,0 +1,20 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "chrome": "70",
+            "ie": "11",
+            "safari": "10",
+            "firefox": "60"
+          }
+        },
+        "minify"
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-transform-runtime"
+    ]
+  }
